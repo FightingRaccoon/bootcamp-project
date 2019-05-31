@@ -3,13 +3,53 @@
   <head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="row">
+      <div class="col-3">
+        <%= link_to root_path, claas: 'logo' do %>
+        <div class="circle">
+          <br />
+          Fighting
+          <br />
+          Raccoon
+          <br />
+          Coding
+        </div>
+        <% end %>
+      </div>
+      <div class="col-4 slogan">
+        Fighting code errors since 2019!
+      </div>
+      <div class="col-5 links">
+        <%= link_to 'Contribute', new_quote_path %>
+        <%= link_to 'About', '#' %>
+      </div>
+    </header>
+
+    <hr />
+
+    <br class="clear" />
+    <div class="container">
     <%= yield %>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+        </div>
+        <div class="col-6 footer-blurb">
+            Created by <a href="[Add_Portfolio_url]">[Grant Schroeder]</a><br />
+            Want to build your own Splurty Web App - <a href="https:online.bootcampspot.com">Learn how to code here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
