@@ -56,7 +56,7 @@ h2 {
 }
 .next-quote {
   color: #E55624;
-  font-family: 'chantelli_antiquaregular', sans-serfir;
+  font-family: 'chantelli_antiquaregular', sans-serif;
   font-size: 20px;
 }
 .footer-blurb {
@@ -68,8 +68,24 @@ h2 {
 .logo:hover {
   text-decoration: none;
 }
-
-
+.about {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+@media (max-width: 750px) {
+  .footer-blurb{
+  text-align: left;
+  }
+}
+.modal {
+  font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+}
+h2 span {
+  color: #4D5861;
+  font-family: 'chantelli_antiquaregular', sans-serif;
+}
+::selection {
+  background-color: #f84342
+}
 
 
 
